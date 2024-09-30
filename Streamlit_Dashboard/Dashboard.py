@@ -16,7 +16,7 @@ if fl is not None:
     st.write(filename)
     df = pd.read_csv(filename)
 else:
-    os.chdir(r"/Users/maiwandraheem/documents/Python Projects/Youtube_Dashboard")
+    os.chdir(r"Streamlit_Dashboard")
     df = pd.read_csv("Sample - Superstore.csv")
 
 col1, col2 = st.columns((2))
