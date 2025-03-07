@@ -16,7 +16,7 @@ if fl is not None:
     st.write(filename)
     df = pd.read_csv(filename)
 else:
-    df = pd.read_csv("Sample - Superstore.csv")
+    df = pd.read_csv("Streamlit_Dashboard/Sample - Superstore.csv")
 
 col1, col2 = st.columns((2))
 df["Order Date"] = pd.to_datetime(df["Order Date"])
